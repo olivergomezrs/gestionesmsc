@@ -1,4 +1,4 @@
-pip install folium geopy streamlit-folium
+
 
 import streamlit as st
 import sqlite3
