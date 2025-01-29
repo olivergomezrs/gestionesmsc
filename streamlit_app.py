@@ -55,7 +55,7 @@ if not st.session_state.logged_in:
             if verificar_credenciales(username, password):
                 st.session_state.logged_in = True
                 st.session_state.username = username
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.error("Credenciales incorrectas")
     
@@ -100,7 +100,7 @@ if st.session_state.logged_in:
 
     if st.button("Cerrar Sesión"):
         st.session_state.logged_in = False
-        st.experimental_rerun()
+        st.rerun()
 
 # Cerrar conexión
 conn.close()
